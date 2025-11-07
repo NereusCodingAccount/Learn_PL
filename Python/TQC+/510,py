@@ -1,0 +1,10 @@
+def compute(n):
+    if n > 1:
+        return compute(n-1) + compute(n-2)  # 遞迴
+    return n
+n = int(input())
+for i in range(n):
+    print(compute(i), end = ' ')
+
+# import math
+# .gcd() 函數用來計算最大公因數
